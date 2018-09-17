@@ -1,6 +1,6 @@
 <% include ../partials/head %>
 
-  
+
     <table class="table">
         <thead>
             <tr>
@@ -12,14 +12,13 @@
         <tbody>
           <% rows.forEach(function(rows){ %>
             <tr>
-                <td scope="row"><%= rows.firstname %></td>
-                <td><%= rows.lastname %></td>
-                <td><%= rows.sid %></td>
+                <td scope="row"><%= rows.code %></td>
+                <td><%= rows.credits %></td>
+                <td><%= rows.sections %></td>
             </tr>
             <% }); %>
         </tbody>
     </table>
-
 
 
 <% include ../partials/footer %>
