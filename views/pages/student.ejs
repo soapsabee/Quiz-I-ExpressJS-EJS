@@ -12,9 +12,11 @@
         <tbody>
           <% rows.forEach(function(rows){ %>
             <tr>
+                <td><%= rows.title %></td>
                 <td scope="row"><%= rows.firstname %></td>
                 <td><%= rows.lastname %></td>
                 <td><%= rows.sid %></td>
+                 
             </tr>
             <% }); %>
         </tbody>

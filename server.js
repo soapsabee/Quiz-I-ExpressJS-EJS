@@ -18,7 +18,15 @@ var connection = mysql.createConnection({
 
 // test database
 
-  connection.connect()
+app.get('/', function(req, res) {
+
+  res.render("pages/index");
+  
+});
+
+
+
+ connection.connect()
 
 connection.query('SELECT * FROM students', function (err, rows, fields) {
   

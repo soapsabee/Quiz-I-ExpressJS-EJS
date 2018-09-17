@@ -1,25 +1,15 @@
 <% include ../partials/head %>
 
-  
-    <table class="table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Email</th>
-                <th>Password</th>
-            </tr>
-        </thead>
-        <tbody>
-          <% rows.forEach(function(rows){ %>
-            <tr>
-                <td scope="row"><%= rows.firstname %></td>
-                <td><%= rows.lastname %></td>
-                <td><%= rows.sid %></td>
-            </tr>
-            <% }); %>
-        </tbody>
-    </table>
-
+  <div class="jumbotron">
+    <h1 class="display-3">Jumbo heading</h1>
+    <p class="lead">Jumbo helper text</p>
+    <hr class="my-2">
+    <p>More info</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="student" role="button">Students</a>
+       <a class="btn btn-primary btn-lg" href="subjects" role="button">Subjects</a>
+    </p>
+  </div>
 
 
 <% include ../partials/footer %>
